@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="506.0" prefWidth="449.0" spacing="20.0" style="-fx-background-color: #97f4e2;" styleClass="root" stylesheets="@styles/style1.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.icesi.javafx.control.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <FlowPane prefHeight="25.0" prefWidth="410.0">
+      <children>
+         <Button fx:id="backButton" mnemonicParsing="false" onAction="#backClick" prefHeight="16.0" prefWidth="103.0" text="Back" />
+      </children>
+   </FlowPane>
+   <VBox fx:id="vboxDad" alignment="CENTER" prefHeight="430.0" prefWidth="423.0">
+      <children>
+         <FlowPane alignment="TOP_CENTER" prefHeight="24.0" prefWidth="338.0" rowValignment="TOP">
+            <children>
+               <Label text="Type your name" />
+            </children>
+         </FlowPane>
+         <TextField fx:id="name" alignment="TOP_LEFT" promptText="name" styleClass="text-field" stylesheets="@styles/style1.css" />
+         <FlowPane alignment="CENTER" prefHeight="34.0" prefWidth="338.0">
+            <children>
+               <Label text="Type your code" />
+            </children>
+         </FlowPane>
+         <TextField fx:id="code" promptText="code" styleClass="text-field" stylesheets="@styles/style1.css" />
+         <FlowPane alignment="CENTER" prefHeight="26.0" prefWidth="338.0">
+            <children>
+               <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" text="Select your carrer" />
+            </children>
+         </FlowPane>
+         <FlowPane alignment="CENTER" prefHeight="31.0" prefWidth="338.0">
+            <children>
+               <ComboBox fx:id="mayers" prefWidth="150.0" promptText="Mayers" styleClass="combo-box" stylesheets="@styles/style1.css" />
+            </children>
+         </FlowPane>
+         <FlowPane alignment="CENTER" prefHeight="29.0" prefWidth="338.0">
+            <children>
+               <Label text="Select your gender" />
+            </children>
+         </FlowPane>
+         <FlowPane alignment="CENTER" prefHeight="27.0" prefWidth="338.0">
+            <children>
+               <CheckBox fx:id="man" alignment="TOP_LEFT" mnemonicParsing="false" stylesheets="@styles/style1.css" text="Man">
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+               </CheckBox>
+               <CheckBox fx:id="women" mnemonicParsing="false" stylesheets="@styles/style1.css" text="Women" />
+            </children>
+         </FlowPane>
+         <FlowPane alignment="CENTER" prefHeight="30.0" prefWidth="338.0">
+            <children>
+               <DatePicker fx:id="birthday" prefHeight="35.0" prefWidth="209.0" promptText="birth" styleClass="date-picker" stylesheets="@styles/style1.css" />
+            </children>
+         </FlowPane>
+         <FlowPane alignment="CENTER" prefHeight="57.0" prefWidth="410.0">
+            <children>
+               <ComboBox fx:id="subjetPicker" prefWidth="150.0" />
+            </children>
+         </FlowPane>
+         <FlowPane alignment="TOP_CENTER" prefHeight="48.0" prefWidth="410.0" rowValignment="TOP">
+            <children>
+                  <Button fx:id="goToTeacherRegister" mnemonicParsing="false" onAction="#registerTeacherClick" prefHeight="37.0" prefWidth="162.0" text="Are you a teacher?" />
+            </children></FlowPane>
+         <FlowPane alignment="CENTER" prefHeight="59.0" prefWidth="410.0">
+            <children>
+                <Button fx:id="registerButton" alignment="CENTER" contentDisplay="CENTER" onAction="#onHelloButtonClick" prefHeight="34.0" prefWidth="132.0" text="Registrar" textAlignment="CENTER">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </Button>
+            </children></FlowPane>
+      </children>
+   </VBox>
+</VBox>
